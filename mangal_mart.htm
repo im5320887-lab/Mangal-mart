@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangal Mart - Shopping Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e3e6e6;
+        }
+
+        /* LOGO AREA */
+        .logo-header {
+            background: #131921;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-circle {
+            width: 70px;
+            height: 70px;
+            background: #ff9900;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        /* M inside circle with bag icon */
+        .logo-circle span {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            position: relative;
+        }
+
+        /* Bag icon */
+        .logo-circle span::after {
+            content: "👜";
+            font-size: 18px;
+            position: absolute;
+            top: -4px;
+            right: -18px;
+        }
+
+        /* Brand Name */
+        .brand-name {
+            font-size: 34px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Sub Header */
+        .sub-header {
+            background: #232f3e;
+            color: white;
+            padding: 12px 25px;
+            display: flex;
+            gap: 25px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .sub-header div:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Banner */
+        .banner img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+
+        /* Product Section */
+        .product-section {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: 0.3s ease;
+        }
+
+        .product-box:hover {
+            transform: scale(1.03);
+        }
+
+        .product-box img {
+            width: 100%;
+            height: 220px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .product-box h3 {
+            margin-bottom: 10px;
+        }
+
+        .product-box p {
+            color: #4b4b4b;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 9px 15px;
+            background: #ff9900;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #131921;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO HEADER -->
+    <div class="logo-header">
+        <div class="logo-circle">
+            <span>M</span>
+        </div>
+        <div class="brand-name">Mangal Mart</div>
+    </div>
+
+    <!-- SUB HEADER -->
+    <div class="sub-header">
+        <div>Today's Deals</div>
+        <div>Mobiles</div>
+        <div>Fashion</div>
+        <div>Electronics</div>
+        <div>Beauty</div>
+        <div>Home</div>
+        <div>Grocery</div>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" />
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div class="product-section">
+
+        <div class="product-box">
+            <h3>Smartphones</h3>
+            <img src="https://images.unsplash.com/photo-1510557880182-3b1bbff6a54f" />
+            <p>Latest 2025 Mobile Collection • Up to 45% OFF</p>
+            <a class="btn">Shop Now</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Sports Shoes</h3>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" />
+            <p>Premium Shoes • Flat 50% OFF</p>
+            <a class="btn">Explore</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Headphones</h3>
+            <img src="https://images.unsplash.com/photo-1518444021357-4f6581c0d4bf" />
+            <p>Wireless Headphones • Best Sound Quality</p>
+            <a class="btn">Buy Now</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Watches</h3>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" />
+            <p>Luxury Watches • Starting from ₹999</p>
+            <a class="btn">View More</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Laptops</h3>
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" />
+            <p>Gaming & Office Laptops • 2025 Models</p>
+            <a class="btn">Check Deals</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Men's Fashion</h3>
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" />
+            <p>Shirts • Hoodies • Jackets • More</p>
+            <a class="btn">See All</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Women's Fashion</h3>
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d" />
+            <p>Trendy Dresses • Heels • Bags</p>
+            <a class="btn">Shop Now</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Home & Kitchen</h3>
+            <img src="https://images.unsplash.com/photo-1616627984783-af9a39dce397" />
+            <p>Cookware • Decor • Electronics</p>
+            <a class="btn">Discover</a>
+        </div>
+
+    </div>
+
+    <div class="footer">© 2025 Mangal Mart | All Rights Reserved</div>
+
+</body>
+</html>
